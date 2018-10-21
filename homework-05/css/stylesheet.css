@@ -1,11 +1,7 @@
-.container {
-  width: 1110px;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -20,11 +16,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -83,13 +74,23 @@ h1::first-letter {
   position: relative;
 }
 
+.container_slaider {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1110px;
+  height: 600px;
+  margin: auto;
+  position: absolute;
+  
+}
+ 
 .slider-ctrl {
   position: absolute;
   border: none;
-  display: inline-block;
   width: 100px;
   height: 100px;
-  background-color: #1abc9c;
+  background-color: rgba(26, 204, 153, 0.5);
   text-align: center;
   font-size: 70px;
   color: #ffffff;
@@ -97,12 +98,16 @@ h1::first-letter {
   transform: translateY(-50%);
 }
 
+.slider-ctrl:hover {
+  background-color: rgba(26, 204, 153, 1);
+}
+
 .slider-ctrl-prev {
-  left: 245px;
+  left: 0;
 }
 
 .slider-ctrl-next {
-  right: 245px;
+  right: 0;
 }
 
 .slaids {
@@ -120,11 +125,11 @@ h1::first-letter {
 .slader_header {
   position: absolute;
   display: block;
-  left: 50%;
-  top: 35%;
-  transform: translateX(-50%) translateY(-50%);
+  left: 20%;
+  top: 42%;
+  transform: translateX(-10%) translateY(-50%);
   color: #ffffff;
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Roboto", sans-serif, serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -132,7 +137,7 @@ h1::first-letter {
 
 .tour_menu {
   position: absolute;
-  left: 42%;
+  left: 37%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: #ffffff;
@@ -182,9 +187,7 @@ h1::first-letter {
 }
 
 
-.new_collection_card_item {
-    list-style: none;
-}
+
 
 .card_item_link {
   width: 250px;
@@ -192,19 +195,22 @@ h1::first-letter {
   display: inline-block;
   margin-right: 32px;
   position: relative;
+  background-color: #ffffff;
 }
 
 .card_item_link:hover .modal_menu {
 display: block;
 background-color: rgba(0, 0, 0, 0.5);
+cursor: pointer;
 }
 
 .card_item_link:hover .card_item_description_name {
   background-color: #1abc9c;
+  cursor: pointer;
 }
 
 
-.card_item_link_image {
+.product_card {
   background-color: #ffffff;
 }
 
@@ -239,6 +245,7 @@ left: 10px;
 
   .button1:hover {
     background-color: #1abc9c;
+    cursor: pointer;
   }
 
   .button2 {
@@ -250,6 +257,7 @@ left: 10px;
 
   .button2:hover {
     background-color: #1abc9c;
+    cursor: pointer;
   }
 
   .button3 {
@@ -260,6 +268,7 @@ left: 10px;
 
   .button3:hover {
     background-color: #1abc9c;
+    cursor: pointer;
   }
 
   .button4 {
@@ -273,6 +282,7 @@ left: 10px;
 
   .button4:hover {
     background-color: #1abc9c;
+    cursor: pointer;
   }
 
 
@@ -288,17 +298,10 @@ left: 10px;
   margin-right: 0;
 }
 
-.card_item_link img {
-  height: 280px;
-  width: 100%;
-  object-fit: cover;
-}
-
 .card_item_description_name {
   float: left;
-  margin: 0;
-  width: 190px;
-  padding: 10px 0px 0px 10px;
+  width: 75%;
+  padding: 5px 0px 0px 10px;
   height: 30px;
   background-color: #323232;
   color: #ffffff;
@@ -308,15 +311,18 @@ left: 10px;
   font-weight: 400;
 }
 .prise {
-  margin: 0;
-  padding: 15px 0 0 5px;
+  float: right;
+  width: 25%;
+  padding-top: 5px;
   text-align: center;
   background-color: #8c8c8c;
-  height:25px;
+  height:30px;
 }
 
 .card_item_link:hover .prise {
+  
   background-color: #7fd9c7;
+  cursor: pointer;
 }
 
 .footer_item {
