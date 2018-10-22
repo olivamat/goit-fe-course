@@ -16,9 +16,6 @@ body {
   text-align: center;
  
 }
-.mastheader_nav {
-  text-align: center;
-}
 
 .nav_list {
   margin: 0;
@@ -54,6 +51,7 @@ body {
 
 .article_discription {
   padding: 100px 0 90px 0;
+  font-size: 0;
 }
 
 .article_bloc {
@@ -63,9 +61,10 @@ body {
 
 article {
   display: inline-block;
+  margin-bottom: 135px;
 }
 .article_odd {
-  margin-right: 56px;
+  margin-right: 60px;
 }
 
 .life {
@@ -83,21 +82,16 @@ article {
 
 .button_size {
   margin: 0 auto;
-
+  padding: 20px 40px 20px 40px;
   width: 160px;
   height: 60px;
   font-size: 20px;
   border: 1px solid #626262;
   line-height: 2.6;
-  
-}
-
-a {
   text-decoration: none;
   color: #626262;
 }
 
-.button_size:hover  a {
+.button_size:hover  {
   color: #03a9f4;
-  
 }
