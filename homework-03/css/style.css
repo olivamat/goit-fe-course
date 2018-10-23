@@ -12,7 +12,6 @@ body {
   margin: 0 auto 100px auto;
   padding-top: 75px;
   margin-bottom: 100px;
-  width: 565px;
   text-align: center;
  
 }
@@ -20,7 +19,6 @@ body {
 .nav_list {
   margin: 0;
   padding: 0;
-  
   text-align: center;
   display: inline-block;
 }
@@ -28,14 +26,18 @@ body {
 .nav_list_item {
   list-style: none;
   display: inline-block;
-  margin-right: 28px;
-  
+  margin-right: 100px;
+}
+
+.nav_list_item:last-child {
+  margin-right: 0;
 }
 
 .item_link {
   color: #626262;
-  font-size: 24px;
+  font-size: 14px;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
 }
 .navbar {
   display: inline-block;
@@ -49,35 +51,38 @@ body {
   color: #03a9f4;
 }
 
-.article_discription {
-  padding: 100px 0 90px 0;
+.article_discripion {
+  padding: 0 0 90px 0;
   font-size: 0;
 }
 
 .article_bloc {
   display: inline-block;
   width: 420px;
-}
-
-article {
-  display: inline-block;
-  margin-bottom: 135px;
-}
-.article_odd {
-  margin-right: 60px;
+  font-size: 16px;
 }
 
 .life {
   color: #b0b0aa;
   font-family: 'Ubuntu','Playfair Display', "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+.article_header {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.article_odd {
+  margin-right: 60px;
 }
 
 .button_wrapper {
   
   display: block;
   text-align: center;
-  padding: 40px 0 60px 0;
+  padding: 0 0 60px 0;
 }
 
 .button_size {
@@ -90,6 +95,7 @@ article {
   line-height: 2.6;
   text-decoration: none;
   color: #626262;
+  font-family: 'Playfair Display', serif;
 }
 
 .button_size:hover  {
