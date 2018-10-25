@@ -104,6 +104,10 @@ h1::first-letter {
   background: #e9f0fd;
 }
 
+.products {
+  margin-bottom: 75px;
+}
+
 .products_item  {
 
   margin: 0;
@@ -143,12 +147,8 @@ h1::first-letter {
 }
 
 .product_item__cart:hover .product_price {
-  background-color: #7fd9c7;
+  background-color: #1abc9c;
 }
-
-/* .image_cart {
-  background: #e9f0fd;
-} */
  
 .image_cart:last-child {
   margin-right: 0;
@@ -176,11 +176,16 @@ h1::first-letter {
   width: 25%;
   height: 35px;
   color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.778;
   text-align: center;
   padding: 5px 0 5px 0;
+  font-family: "Roboto", sans-serif, serif;
   font-weight: 400;
   font-size: 18px;
-  background-color: #8c8c8c;
+  background-color: rgb(0, 0, 0 );
+  opacity: 0.439;
+  
 }
 
 .news_item__list {
@@ -228,11 +233,8 @@ h1::first-letter {
 }
 
 .news_item__list-link {
+  display: block;
   text-decoration: none;
-  
-}
-
-.read_more {
   background-color: #1abc9c;
   padding: 17px 20px;
   width: 160px;
@@ -241,13 +243,10 @@ h1::first-letter {
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 80px;
-}
-
-.read_more:hover {
-  background-color: #13705e;
-}
-
-.news_item__list-link {
   color: #ffffff;
 }
 
+
+.news_item__list-link:hover {
+  background-color: #13705e;
+}
