@@ -104,6 +104,11 @@ h1::first-letter {
   background: #e9f0fd;
 }
 
+.product_item__cart img {
+  display: block;
+  width: 100%;
+}
+
 .products {
   margin-bottom: 75px;
 }
@@ -200,6 +205,14 @@ h1::first-letter {
 .news_item__cart {
     text-align: centre;
 }
+
+.news_item__cart img {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
 .news_item__list:last-child {
   margin-right: 0;
 }
