@@ -147,16 +147,20 @@ h1::first-letter {
   margin-right: 0;
 }
 
-.product_item__cart:hover .product_name {
-  background-color: #1abc9c;
+.product_item__cart:hover .product_item_discription {
+  background-color: rgb(26, 188, 156);
 }
 
 .product_item__cart:hover .product_price {
-  background-color: rgba(26, 188, 156, 0.4);
+  background-color:  rgba(255, 255, 255, 0.5);
 }
  
 .image_cart:last-child {
   margin-right: 0;
+}
+
+.product_item_discription {
+  background-color: #323232;
 }
 
 .product_name {
@@ -164,7 +168,6 @@ h1::first-letter {
   margin: 0;
   width: 75%;
   height: 35px;
-  background-color: #323232;
   color: #ffffff;
   font-family: "Roboto", sans-serif, serif;
   text-transform: uppercase;
@@ -188,7 +191,7 @@ h1::first-letter {
   font-family: "Roboto", sans-serif, serif;
   font-weight: 400;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.3 );
+  background-color: rgba(255, 255, 255, 0.5 );
    
 }
 
