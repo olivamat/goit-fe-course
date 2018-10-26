@@ -147,7 +147,7 @@ h1::first-letter {
 }
 
 .product_item__cart:hover .product_price {
-  background-color: #1abc9c;
+  background-color: rgba(26, 188, 156, 0.4);
 }
  
 .image_cart:last-child {
@@ -183,9 +183,8 @@ h1::first-letter {
   font-family: "Roboto", sans-serif, serif;
   font-weight: 400;
   font-size: 18px;
-  background-color: rgb(0, 0, 0 );
-  opacity: 0.439;
-  
+  background-color: rgba(0, 0, 0, 0.3 );
+   
 }
 
 .news_item__list {
@@ -233,11 +232,10 @@ h1::first-letter {
 }
 
 .news_item__list-link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   background-color: #1abc9c;
-  padding: 17px 20px;
-  width: 160px;
+  padding: 15px 35px;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;

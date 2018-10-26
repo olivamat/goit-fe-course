@@ -14,50 +14,45 @@
 </head>
 
 <body>
-    <div class="masthead-wrapper">
 
-        <header class="masthead container clearfix">
+    <header class="masthead container clearfix">
 
-            <div class="masthead__header clearfix">
+        <a href="#" class="logo-link">
+            <h1 class="logo"> mart</h1>
+        </a>
 
-                <a href="#" class="logo-link">
-                    <h1 class="logo"> mart
+        <nav class="header__header-nav">
+            <ul class="header-nav__nav-list clearfix">
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">Home</a>
+                </li>
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">About us</a>
+                </li>
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">Page</a>
+                </li>
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">Shop</a>
+                </li>
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">Blog</a>
+                </li>
+                <li class="nav-list__nav-item">
+                    <a href="#" class="nav-item__link">Contact us</a>
+                </li>
+            </ul>
+        </nav>
 
-                    </h1>
-                </a>
+    </header>
+    
+    
+    <section class="products">
 
-                <nav class="header__header-nav">
-                    <ul class="header-nav__nav-list clearfix">
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">Home</a>
-                        </li>
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">About us</a>
-                        </li>
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">Page</a>
-                        </li>
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">Shop</a>
-                        </li>
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">Blog</a>
-                        </li>
-                        <li class="nav-list__nav-item">
-                            <a href="#" class="nav-item__link">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-
-
-    </div>
-
-    <div class="featured_products container">
-        <section class="products container">
+        <div class="container">
+            
             <h2 class="banner__title section_title">featured products</h2>
+            
             <ul class="products_item clearfix">
 
                 <li class="products_item__list">
@@ -65,7 +60,7 @@
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product1.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">blue tshirt</h2>
+                        <h3 class="product_name">blue tshirt</h3>
                         <p class="product_price">26$</p>
 
                     </div>
@@ -76,20 +71,21 @@
 
 
                     <div class="product_item__cart clearfix">
-                        
+
                         <img class="image_cart" src="./img/product2.png" alt="woman shirt" width="255" height="290">
-                        <h2 class="product_name"> woman shirt </h2>
+                        <h3 class="product_name"> woman shirt </h3>
                         <p class="product_price">31$</p>
 
                     </div>
 
                 </li>
+
                 <li class="products_item__list">
 
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product1.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">yellow tshirt</h2>
+                        <h3 class="product_name">yellow tshirt</h3>
                         <p class="product_price">21$</p>
 
                     </div>
@@ -101,7 +97,7 @@
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product9.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">cool lingerie</h2>
+                        <h3 class="product_name">cool lingerie</h3>
                         <p class="product_price">56$</p>
 
                     </div>
@@ -113,7 +109,7 @@
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product4.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">blue tshirt </h2>
+                        <h3 class="product_name">blue tshirt </h3>
                         <p class="product_price">26$</p>
 
                     </div>
@@ -125,7 +121,7 @@
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product5.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">woman shirt </h2>
+                        <h3 class="product_name">woman shirt </h3>
                         <p class="product_price">31$</p>
 
                     </div>
@@ -137,20 +133,19 @@
                     <div class="product_item__cart clearfix">
 
                         <img class="image_cart" src="./img/product6.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">yellow tshir</h2>
+                        <h3 class="product_name">yellow tshir</h3>
                         <p class="product_price">21$</p>
 
                     </div>
 
                 </li>
 
-
                 <li class="products_item__list">
 
                     <div class="product_item__cart clearfix">
 
                         <img src="./img/product8.png" alt="shoes" width="255" height="290">
-                        <h2 class="product_name">cool lingerie</h2>
+                        <h3 class="product_name">cool lingerie</h3>
                         <p class="product_price">56$</p>
 
                     </div>
@@ -159,8 +154,9 @@
 
             </ul>
 
-        </section>
-    </div>
+        </div>
+
+    </section>
 
     <section class="news_bloc container">
 
@@ -181,7 +177,7 @@
                         nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
                         a odio tincidunt auctor a ornare</p>
                     <a href="#" class="news_item__list-link"> Read More </a>
-                    
+
 
                 </article>
 
@@ -200,7 +196,7 @@
                         nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
                         a odio tincidunt auctor a ornare</p>
                     <a href="#" class="news_item__list-link"> Read More </a>
-                    
+
 
                 </article>
 
@@ -219,7 +215,7 @@
                         nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
                         a odio tincidunt auctor a ornare</p>
                     <a href="#" class="news_item__list-link"> Read More </a>
-                    
+
 
                 </article>
 
