@@ -107,6 +107,7 @@ h1::first-letter {
 .product_item__cart img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .products {
@@ -212,6 +213,7 @@ h1::first-letter {
 .news_item__cart img {
   display: block;
   width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }
 
