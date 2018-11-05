@@ -80,13 +80,18 @@ h1::first-letter {
 
 .slaids {
   width: 100%;
-  margin: 0 auto;
-  position: relative;
+    position: relative;
 }
+
+.slaids img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 .eclipse {
   width: 100%;
-  margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,52 +103,35 @@ h1::first-letter {
 }
 
 .container_slaider {
-  top: 0;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  right: 0;
-  bottom: 0;
   transform: translateX(-50%);
   width: 1110px;
-  margin: auto;
-  position: absolute;
   
 }
  
+.slader_header_menu {
+  margin: 0 12% 0 12%;
+  display: inline-block;
+}
+
 .slider-ctrl {
-  position: absolute;
+  display: inline-block;
   border: none;
   width: 100px;
-  background-color: rgba(26, 204, 153, 0.5);
+  /* background-color: rgb(26, 188, 156); */
+  background-color: rgba(26, 188, 156, 0.5);
   text-align: center;
   font-size: 70px;
   color: #ffffff;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .slider-ctrl:hover {
-  background-color: rgba(26, 204, 153, 1);
-}
-
-.slider-ctrl-prev {
-  left: 0;
-}
-
-.slider-ctrl-next {
-  right: 0;
-}
-
-.slaids img {
-  width: 100%;
-  object-fit: cover;
+  background-color: rgba(26, 188, 156, 1);
 }
 
 .slader_header {
-  position: absolute;
-  display: block;
-  left: 20%;
-  top: 42%;
-  transform: translateX(-10%) translateY(-50%);
   color: #ffffff;
   font-size: 50px;
   font-family: "Roboto", sans-serif, serif;
@@ -152,10 +140,6 @@ h1::first-letter {
 }
 
 .tour_menu {
-  position: absolute;
-  left: 37%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
@@ -174,7 +158,7 @@ h1::first-letter {
 }
 
 .tour_menu_link:hover {
-  color: #1abc9c;
+  color: rgb(26, 188, 156);
 }
 
 /* new_colection */
@@ -207,7 +191,7 @@ h1::first-letter {
   display: block;
   width: 160px;
   margin: 0 auto;
-  border-bottom: 8px solid #1abc9c;
+  border-bottom: 8px solid rgb(26, 188, 156);
   margin-top: 30px;
 }
 
@@ -247,17 +231,23 @@ cursor: pointer;
 .product_card>img{
   display: block;
   width: 100%;
+  height: auto;
 }
 
 
 .modal_menu {
 display: none;
 position: absolute;
-width: 230px;
-height: 260px;
 text-align: center;
 top: 10px;
 left: 10px;
+bottom: 50px;
+right: 10px;
+}
+
+.modal_menu_button_wrapper {
+  position: absolute;
+  top: 80px;
 }
 
 .modal_menu_button {
@@ -266,23 +256,14 @@ left: 10px;
   border: 1px solid #ffffff;
   margin-right: 10px;
   color: #ffffff;
-}
-  .button1 {
-    position: absolute;
-    top: 90px;
-    left: 30px;
+  border: none;
+  text-transform: uppercase;
    
-  }
+}
 
   .button1:hover {
     background-color: rgb(26, 188, 156);
     cursor: pointer;
-  }
-
-  .button2 {
-    position: absolute;
-    top: 90px;
-    left: 85px;
   }
 
 
@@ -291,21 +272,12 @@ left: 10px;
     cursor: pointer;
   }
 
-  .button3 {
-    position: absolute;
-    top: 90px;
-    left: 140px;
-  }
-
   .button3:hover {
     background-color: rgb(26, 188, 156);
     cursor: pointer;
   }
 
   .button4 {
-    position: absolute;
-    top: 145px;
-    left: 30px;
     border: none;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.8);
@@ -336,7 +308,7 @@ margin-left: 5px;
 .card_item_description_name {
   float: left;
   width: 75%;
-  padding: 5px 0px 0px 10px;
+  padding: 10px 0px 10px 10px;
   color: #ffffff;
   font-size: 18px;
   font-family: "Roboto", sans-serif, serif;
@@ -346,7 +318,7 @@ margin-left: 5px;
 .prise {
   float: right;
   width: 25%;
-  padding: 5px 0px 0px 10px;
+  padding: 10px 0px 10px 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
   color: #ffffff;
@@ -362,18 +334,15 @@ margin-left: 5px;
   background-color:#323232;
   color: #ffffff;
   text-align: center;
-  /* list-style: none; */
   padding: 40px 0 40px 0;
 }
 
 footer a:hover {
-  color: rgb(26, 188, 156);
   text-decoration: none;
   cursor: pointer;
 }
 
 footer a {
-  color: #ffffff;
+  color: rgb(26, 188, 156);
   text-decoration: none;
-  cursor: pointer;
 }
