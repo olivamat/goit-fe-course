@@ -106,7 +106,7 @@ h1::first-letter {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 1110px;
   
 }
@@ -228,10 +228,14 @@ cursor: pointer;
 
 /* modal_menu */
 
-.product_card>img{
+.card_item_img>img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.card_item_img {
+  position: relative;
 }
 
 
@@ -241,13 +245,16 @@ position: absolute;
 text-align: center;
 top: 10px;
 left: 10px;
-bottom: 50px;
+bottom: 10px;
 right: 10px;
 }
 
 .modal_menu_button_wrapper {
   position: absolute;
-  top: 80px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal_menu_button {
@@ -258,7 +265,9 @@ right: 10px;
   color: #ffffff;
   border: none;
   text-transform: uppercase;
-   
+  background: transparent;
+   /* background: rgba(255, 255, 255, 0.1); */
+   /* opacity: 1; */
 }
 
   .button1:hover {
