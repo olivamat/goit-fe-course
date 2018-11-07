@@ -261,13 +261,11 @@ right: 10px;
   width: 50px;
   height: 50px;
   border: 1px solid #ffffff;
-  margin-right: 10px;
+  /* margin-right: 5px; */
   color: #ffffff;
-  border: none;
   text-transform: uppercase;
   background: transparent;
-   /* background: rgba(255, 255, 255, 0.1); */
-   /* opacity: 1; */
+  line-height: 3.7;  
 }
 
   .button1:hover {
@@ -300,10 +298,10 @@ right: 10px;
 
 
 .modal_menu_button_big {
-  border: none; 
   width: 160px;
   height: 50px;
   margin: 9px 0 0 0;
+  border: 1px solid #ffffff;
 }
 
 .add {
