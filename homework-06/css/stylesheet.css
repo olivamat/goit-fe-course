@@ -60,7 +60,6 @@ ul {
 
 .servis {
   margin-bottom: 120px;
-  /* background-color: red; */
   justify-content: space-between;
 }
 
@@ -107,8 +106,6 @@ ul {
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
-  /* margin-bottom: 50px; */
-  /* background-color: red; */
   justify-content: space-between;
 }
 .item_servic {
@@ -317,8 +314,6 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  /* padding: 0 10px; */
-  /* height: 36px; */
   font-size: 14px;
   width: 150px;
   text-transform: uppercase;
@@ -328,8 +323,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  /* box-shadow: var(--black-alfa1); */
   background-color: var(--textcolor);
   cursor: pointer;
-  /* box-sizing: border-box; */
 }
