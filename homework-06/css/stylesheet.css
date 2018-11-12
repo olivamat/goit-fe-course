@@ -13,13 +13,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
-
 .header_menu {
-  margin-bottom: 120px;
+  margin-bottom: 110px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -37,17 +38,17 @@ ul {
 
 .logo:hover {
   color: var(--colorline);
-  
 }
 
 .menu_nav {
   list-style: none;
   padding: 35px 0 0 10px;
-  margin-bottom: 100px;
+  
 }
 
 .menu_link a {
   text-decoration: none;
+  font-family: var(--fontfamily2);
   margin: 0 0 0 60px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -58,25 +59,20 @@ ul {
   border-bottom: 4px solid var(--colorline);
 }
 
-.servis {
-  margin-bottom: 120px;
+.services {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.header_litl {
+.title1section {
   font-family: var(--fontfamily3);
   font-size: 24px;
   color: var(--textcolorh2);
   line-height: 1.2;
 }
 
-.header_big {
+.title2section {
   font-family: var(--fontfamily2);
   font-size: 30px;
   text-transform: uppercase;
@@ -89,9 +85,10 @@ ul {
   width: 980px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 95px;
 }
 
-.servic h2::after {
+.section_services h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -101,16 +98,10 @@ ul {
   margin-bottom: 50px;
 }
 
-.servic_item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-.item_servic {
+.item_service {
   display: flex;
   width: 33.33%;
+  margin-bottom: 100px;
 }
 .item_servic_description {
   text-align: left;
@@ -118,25 +109,23 @@ ul {
 .item_servic_image {
   margin: 0 15px 0 15px;
 }
-.descrripion_header {
-  margin: 0;
-}
 
-.descrripion_header {
+.name_service {
   font-family: var(--fontfamily);
   font-size: 14px;
   text-transform: uppercase;
   color: var(--textcolorh2);
   font-weight: 500;
+  margin: 0;
 }
-.description {
+
+.description_service {
   font-family: var(--fontfamily);
   font-size: 15px;
-  margin-bottom: 100px;
   color: var(--textcolor);
 }
 
-.our_team h2::after {
+.section_our_team h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -152,7 +141,7 @@ ul {
 }
 
 .item_team_bg {
-  background-color: aqua;
+  background-color: var(--textcolorheader);
   position: relative;
 }
 
@@ -277,14 +266,14 @@ ul {
   font-weight: normal;
 }
 
-.footer {
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--textcolor);
 }
 
-.footer_discription {
+.footer_description {
   font-family: var(--fontfamily);
   font-size: 15px;
   margin-bottom: 30px;
@@ -308,18 +297,23 @@ input {
 }
 
 input[type="email"] {
-  color: var(--textcolor2);
+  font-family: var(--fontfamily);
+  color: var(--textcolorh2);
   font-size: 15px;
   padding: 0 0 0 15px;
 }
 
 input[type="submit"] {
+  font-family: var(--fontfamily2);
   font-size: 14px;
   width: 150px;
   text-transform: uppercase;
   background-color: var(--textcolorheader);
   color: #ffffff;
-  /* box-sizing: border-box; */
+}
+
+.email_input::placeholder {
+  color: var(--textcolor);
 }
 
 input[type="submit"]:hover {
