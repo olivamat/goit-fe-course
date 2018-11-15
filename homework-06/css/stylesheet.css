@@ -19,11 +19,14 @@ ul {
   margin: 0 auto;
   text-align: center;
 }
-.header_menu {
+
+header {
   margin-bottom: 110px;
+}
+
+.header_menu {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 }
 
 .logo {
@@ -41,6 +44,8 @@ ul {
 }
 
 .menu_nav {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 35px 0 0 10px;
   
@@ -59,20 +64,14 @@ ul {
   border-bottom: 4px solid var(--colorline);
 }
 
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.title1section {
+.services-title {
   font-family: var(--fontfamily3);
   font-size: 24px;
   color: var(--textcolorh2);
   line-height: 1.2;
 }
 
-.title2section {
+.services-title-part {
   font-family: var(--fontfamily2);
   font-size: 30px;
   text-transform: uppercase;
@@ -86,9 +85,12 @@ ul {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 95px;
+  font-family: var(--fontfamily);
+  font-size: 15px;
+  color: var(--textcolor);
 }
 
-.section_services h2::after {
+.services h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -96,6 +98,12 @@ ul {
   border-bottom: 4px solid var(--colorline);
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item_service {
@@ -145,10 +153,14 @@ ul {
   position: relative;
 }
 
+.item_team_card {
+  width: 380px;
+  /* height: 470px; */
+}
+
 .item_team_img {
   transition: transform 0.2s linear;
-  width: 380px;
-  height: 470px;
+  
 }
 
 .item_team_img:hover {
@@ -310,10 +322,13 @@ input[type="submit"] {
   text-transform: uppercase;
   background-color: var(--textcolorheader);
   color: #ffffff;
+  border: none;
 }
 
 .email_input::placeholder {
   color: var(--textcolor);
+  font-family: var(--fontfamily);
+  font-style: italic;
 }
 
 input[type="submit"]:hover {
