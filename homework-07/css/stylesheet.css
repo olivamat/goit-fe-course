@@ -2,11 +2,14 @@
   --textcolorlogo: #fed136;
   --textcolor2: #222222;
   --textcolor3: #777777;
+  --textcolor4: #ffffff;
+  --textcolor5: #bbbbbb;
   --colorline: #f38181;
   --fontfamily: "WisdomScriptAJ", sans-serif, serif;
   --textcolorheader: #95e1d3;
   --fontfamily2: "Montserrat", sans-serif;
   --fontfamily3: "DroidSerif-Italic", sans-serif;
+  --fontfamily4: "Roboto", sans-serif;
 }
 
 @font-face {
@@ -80,6 +83,8 @@ ul {
 
 .menu_nav {
   width: 485px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu_link {
@@ -107,11 +112,9 @@ ul {
   margin: 0 auto;
 }
 
-.services-title {
-  text-align: center;
-}
 
 .services-title {
+  text-align: center;
   font-family: var(--fontfamily2);
   font-weight: 600;
   font-size: 40px;
@@ -127,19 +130,21 @@ ul {
 .services-bloc {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 125px;
 }
 
 .services-item {
   text-align: center;
+  width: 30.85%;
 }
 
-.item-servic-image {
+.services-item-image {
   display: inline-block;
   width: 70px;
   height: 70px;
   border: 2px solid var(--textcolorlogo);
   border-radius: 35px; 
-  line-height: 60px;
+  line-height: 100px;
   
 }
 
@@ -147,36 +152,98 @@ ul {
   vertical-align: middle;
 }
 
+.services-item-name {
+  font-family: var(--fontfamily2);
+  color: var(--textcolor2);
+  font-size: 18px;
+
+}
+
+.services-item-description {
+  font-family: var(--fontfamily3);
+  color: var(--textcolor3);
+  /* padding: 0 30px 0 30px; */
+  font-size: 14px;
+  
+
+}
+
 .contact {
+  width: 1400px;
+  margin: 0 auto;
   height: auto;
   background-color: #222222;
-
-}
-/* 
-.bloc_left {
-  width: 100%;
-  height: auto;
-  background-color: #222222;
-}
-
-.bloc_right {
-  width: 100%;
   height: auto;
   background-color: #222222;
   background-image: url(../img/Map\ Image.png);
-  background-position: center; /* Center the image */
+  background-position: right; 
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center;  */
 }
 
+.contact-title {
+  text-align: center;
+  font-family: var(--fontfamily2);
+  font-weight: 400;
+  font-size: 40px;
+  color: var(--textcolor4);
+  line-height: 1.2;
+}
 
-.Map_Image {
-  background-image: url("Map Image.png");
-  opacity: 0.302;
-  position: absolute;
-  left: 786px;
-  top: 762px;
-  width: 614px;
-  height: 537px;
-  z-index: 4;
-}  */
+.contact-title_part {
+  font-family: var(--fontfamily3);
+  font-size: 16px;
+  color: var(--textcolor3);
+}
+
+.wrapper_form {
+  display: flex;
+  justify-content: space-between;
+}
+.form-personal-data {
+   width: 48.8%;
+}
+.input {
+  line-height: 2;
+  width: 100%;
+  margin-bottom: 28px;
+
+}
+
+.input::placeholder {
+  font-family: var(--fontfamily2);
+  font-size: 14px;
+  color: var(--textcolor5);
+  text-transform: uppercase;
+}
+
+/* .textarea::placeholder {
+  font-family: var(--fontfamily2);
+  font-size: 14px;
+  color: var(--textcolor2);
+  text-transform: uppercase;
+} */
+
+.form-message {
+  display: inline-block;
+  width: 48.8%;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 105px;
+}
+
+input[type=submit] {
+  padding:15px 35px; 
+  background: var(--textcolorlogo); 
+  border:0 none;
+  cursor:pointer;
+  font-family: var(--fontfamily2);
+  color: var(--textcolor4);
+  text-transform: uppercase;
+}
