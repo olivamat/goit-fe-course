@@ -329,7 +329,17 @@ font-size: 14px;
     margin-bottom: 100px;
   }
   .find {
+    width: 230px;
     margin-bottom: 230px;
   }
 
+  .find a {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .find-other a {
+    font-weight: 600;
+    font-size: 14px;
+  }
 }
