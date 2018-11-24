@@ -72,17 +72,23 @@ header {
 }
 
 .login-registration {
-  /* margin: 0 auto 50px auto; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: 20px;
 }
 
 .login {
   width: 90px;
-  padding: 40px 0 10px 0;
+  padding: 7px 0 7px 0;
   box-sizing: border-box;
   text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 15px;
+}
+
+.login:hover {
+  border: 2px solid var(--textcolor4);
 }
 
 .login a {
@@ -97,8 +103,12 @@ header {
   padding: 7px 0 7px 0;
   box-sizing: border-box;
   text-align: center;
-  border: 2px solid var(--textcolor4);
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 15px;
+}
+
+.registration:hover {
+  border: 2px solid var(--textcolor4);
 }
 
 .registration a {
@@ -276,7 +286,7 @@ header {
 .find-other a {
   text-decoration: none;
   color: var(--textcolor5);
-  font-family: var(--fontfomily2);
+  font-family: var(--fontfamily2);
   font-weight: 600;
   font-size: 14px;
 }
@@ -304,7 +314,7 @@ header {
   }
 
   .login-registration {
-    margin: 0 0 50px 0;
+    margin: 40px 0 50px 0;
     order: 2;
   }
 
