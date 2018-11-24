@@ -251,6 +251,9 @@ background-color: red;
 .find-other a {
 text-decoration: none;
 color: var(--textcolor5);
+font-family: var(--fontfomily2);
+font-weight: 600;
+font-size: 14px;
 }
 
 @media (min-width:768px) {
@@ -298,6 +301,9 @@ color: var(--textcolor5);
     align-items: center;
   }
 
+  .find-other {
+    width: 190px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -325,4 +331,5 @@ color: var(--textcolor5);
   .find {
     margin-bottom: 230px;
   }
+
 }
