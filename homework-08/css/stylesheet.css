@@ -53,7 +53,7 @@ ul {
   margin: 0 auto;
 }
 
-.header {
+.top {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -310,7 +310,7 @@ ul {
     width: 660px;
   }
 
-  .header {
+  .top {
     /* width: 100%; */
     display: flex;
     justify-content: space-between;
@@ -357,7 +357,7 @@ ul {
     flex-wrap: nowrap;
   }
 
-  .header {
+  .top {
     margin-bottom: 100px;
   }
   .find {
